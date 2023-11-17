@@ -404,6 +404,12 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.grid {
+  display: grid;
+}
+.gap-4 {
+  gap: 1rem;
+}
 
 /* Custom CSS */
 
