@@ -32,14 +32,10 @@
         </div>
 
         <div> 
-            <img src="/images/moody-website-assets/moody-1.jpg">
+            <img src="/images/moody-website-assets/moody-1.jpg" class="mb-24">
         </div>
-    </section>
 
-        <!-- This is the heading text section -->
-
-    <section>
-        <div class="grid grid-cols-6">
+        <div class="grid md:grid-cols-6 ">
             <h3 class="uppercase font-bold"> Fact: <span class="block text-4xl font-bold"> 900 </span> </h3>
             <h3 class="uppercase font-bold"> Fact: <span class="block text-4xl font-bold"> Y2K </span> </h3>
             <h3 class="uppercase font-bold"> Fact: <span class="block text-4xl font-bold"> 420K </span> </h3>
@@ -53,40 +49,42 @@
 
     <!-- This is the footer section -->
     
-    <footer class="flex justify-between">
+    <footer>
+
+        <div class="grid grid-cols-2 md:flex md:justify-between border-t-2 pt-14 gap-32">
 
         <div>
-            <h4> Small heading </h4>
-            <nav class="uppercase">
-                <a href="#"> Lorem Ipsum here </a>
-                <a href="#"> Lorem Ipsum here </a>
-                <a href="#"> Lorem Ipsum here </a>
-                <a href="#"> Lorem Ipsum here </a>
+            <h4 class="uppercase pb-4"> Small heading </h4>
+            <nav class="uppercase leading-6">
+                <a href="#"> Lorem Ipsum </a>
+                <a href="#"> Lorem Ipsum </a>
+                <a href="#"> Lorem Ipsum </a>
+                <a href="#"> Lorem Ipsum </a>
             </nav>
         </div>
     
         <div>
-            <h4> Small heading </h4>
-            <nav class="uppercase">
-                <a href="#"> Lorem Ipsum here </a>
-                <a href="#"> Lorem Ipsum here </a>
-                <a href="#"> Lorem Ipsum here </a>
-                <a href="#"> Lorem Ipsum here </a>
+            <h4 class="uppercase pb-4"> Small heading </h4>
+            <nav class="uppercase leading-6">
+                <a href="#"> Lorem Ipsum </a>
+                <a href="#"> Lorem Ipsum </a>
+                <a href="#"> Lorem Ipsum </a>
+                <a href="#"> Lorem Ipsum </a>
             </nav>
         </div>
-    
-        <div>   
+        <div></div>
+        <div class="shrink-0">   
             <form> 
                 <label for="Subscribe" class="text-2xl mb-4 block uppercase"> Subscribe to our newsletter </label>
-                <input type="text" id="subscribe" name="SUBSCRIBE" class="px-6 py-1 w-full mb-4 "> 
+                <input type="text" id="subscribe" name="SUBSCRIBE" class="px-6 py-1 w-full mb-4 bg-inherit border"> 
 
                 <div class="text-right">
                 <input class="px-8 py-1 uppercase bg-white text-black ml-auto tracking-widest mb-4" type="submit" value="SUBSCRIBE">
                 </div>
             </form>
         </div>
-
-    </footer>
+        </div> 
+ </footer>
 
 </body>
 </html>

@@ -19,9 +19,11 @@ body{
   font-family: 'Nunito Sans', sans-serif;
 }
 
-body > section{
+body > section, 
+body footer,
+body header {
   position: relative;
-  padding: 8% 5%;
+  padding: 6% 5%;
   padding-top: 2%;
 }
 
