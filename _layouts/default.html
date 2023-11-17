@@ -10,13 +10,13 @@
     <link href="/assets/css/style.css" rel="stylesheet">
 
 </head>
-<body>
+<body class="bg-black text-white">
 
     <!-- This is the navigation bar -->
     <section>
     <header>
-
-        <h2> Name of company </h2>
+        <div class="flex justify-between items-center uppercase">
+            <h2> Name of company </h2>
 
             <nav>
                 <a href="#"> Nav 1 </a>
@@ -24,7 +24,7 @@
                 <a href="#"> Nav 3 </a>
                 <a href="#"> Nav 4 </a>
             </nav>
-
+        </div>
         <!-- This is the heading banner section -->
 
         <div>
@@ -32,44 +32,56 @@
         </div>
 
         <div> 
-            <img src="#" alt="">
+            <img src="/images/moody-website-assets/moody-1.jpg"
         </div>
     </section>
 
         <!-- This is the heading text section -->
 
     <section>
-        <div>
-            <h3> Fact: <span> 900 </span> </h3>
-            <h3> Fact: <span> 900 </span> </h3>
-            <h3> Fact: <span> 900 </span> </h3>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate hic quo fugiat itaque recusandae temporibus voluptatem. </p>
+        <div class="grid grid-cols-6">
+            <h3> Fact: <span class="block text-2xl font-bold"> 900 </span> </h3>
+            <h3> Fact: <span class="block"> 900 </span> </h3>
+            <h3> Fact: <span class="block"> 900 </span> </h3>
+            <p class="col-span-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate hic quo fugiat itaque recusandae temporibus voluptatem. </p>
         </div>
     </section>
-
-        <!-- Section 2 - Text and Image Grid -->
-    <section>  
-
-        <div>
-            <h1> Another </h1>
-            <h2> Sick Heading for attention </h2>
-            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus natus ratione molestiae enim rem omnis eaque? Ratione, nostrum hic nihil nam earum mollitia atque suscipit libero ad, alias asperiores aliquam. </p>
-        </div>
-
-        <div class="grid grid-col-3 gap-4"> 
-            <div> </div>
-            <div> </div>
-        </div>
-
-    </section>  
 
     </header>
 
     {{content}}
-    
-    <footer>
 
-        <h2> Footer </h2>
+    <!-- This is the footer section -->
+    
+    <footer class="flex justify-between">
+
+        <div>
+            <h4> Small heading </h4>
+            <nav class="uppercase">
+                <a href="#"> Lorem Ipsum here </a>
+                <a href="#"> Lorem Ipsum here </a>
+                <a href="#"> Lorem Ipsum here </a>
+                <a href="#"> Lorem Ipsum here </a>
+            </nav>
+        </div>
+    
+        <div>
+            <h4> Small heading </h4>
+            <nav class="uppercase">
+                <a href="#"> Lorem Ipsum here </a>
+                <a href="#"> Lorem Ipsum here </a>
+                <a href="#"> Lorem Ipsum here </a>
+                <a href="#"> Lorem Ipsum here </a>
+            </nav>
+        </div>
+    
+        <div>   
+            <form> 
+                <label for="Subscribe" class="text-2xl mb-4 block uppercase"> Subscribe to our newsletter </label>
+                <input type="text" id="subscribe" name="SUBSCRIBE" class="px-6 py-1 w-full mb-4 "> 
+                <input class="px-8 py-1 uppercase bg-white text-black ml-auto tracking-widest mb-4" type="submit" value="SUBSCRIBE">
+            </form>
+        </div>
 
     </footer>
 
