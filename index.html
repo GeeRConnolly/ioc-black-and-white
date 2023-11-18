@@ -11,8 +11,10 @@ layout: default
         <p class="pt-12 max-w-lg"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus natus ratione molestiae enim rem omnis eaque? Ratione, nostrum hic nihil nam earum mollitia atque suscipit libero ad, alias asperiores. </p>
     </div>
         </div>
+
+        <!-- This is the grid image gallery -->
     
-        <div class="grid grid-cols-3 gap-4 p-8 m-auto"> 
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 p-8 m-auto"> 
             <img src="/images/moody-website-assets/moody-2.jpg">
             <img src="/images/moody-website-assets/moody-3.jpg">
             <img src="/images/moody-website-assets/moody-4.jpg"> 
@@ -22,7 +24,7 @@ layout: default
         </div>
 
         <div class="flex justify-center pt-4">
-            <a href="#" class="bg-white text-black text-center px-8 py-1 uppercase tracking-widest"> Sign Up </a>
+            <a href="#" class="bg-white border text-black text-center px-8 py-1 uppercase tracking-widest hover:bg-black hover:text-white"> Sign Up </a>
         </div>
 
 </section>  
@@ -35,15 +37,15 @@ layout: default
         <h1> This is a <br> fun heading </h1>
     </div>
 
-    <div class="grid grid-cols-2 gap-32">
-    <div>   
+    <div class="grid md:grid-cols-2 gap-32">
+    <div class="max-w-md">   
         <p class="uppercase border-b-2 font-bold"> Another </p>
         <p> Sick heading for attention </p>
         <p class="pt-10 pb-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem accusamus ad voluptatem asperiores doloribus nostrum vel cupiditate ipsa rerum atque reiciendis modi, alias tenetur neque illum. Iusto, eveniet ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem accusamus ad voluptatem asperiores doloribus nostrum vel cupiditate ipsa rerum atque reiciendis modi, alias tenetur neque illum. Iusto, eveniet ut? </p>    
         
         <p class="pt-1 pb-14"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolorem accusamus ad voluptatem asperiores doloribus nostrum vel cupiditate ipsa rerum atque reiciendis modi, alias tenetur neque illum. Iusto, eveniet ut? </p>    
 
-        <a href="#" class="bg-white text-black px-6 py-1 uppercase tracking-widest"> Sign Up </a>
+        <a href="#" class="bg-white border text-black px-6 py-1 uppercase tracking-widest hover:bg-black hover:text-white"> Sign Up </a>
     </div>
 
     <div class="flex"> 
@@ -58,7 +60,7 @@ layout: default
 
 <section> 
 
-    <p class="font-bold text-7xl text-center uppercase border-y-2 p-10"> Sometimes all you need is a big random block of text to really drive home the point. </p>
+    <p class="font-bold text-4xl md:text-7xl text-center uppercase border-y-2 p-6 md:p-10"> Sometimes all you need is a big random block of text to really drive home the point. </p>
 
 </section>
 
@@ -76,9 +78,11 @@ layout: default
 
             <p class="pb-12"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magni saepe, molestiae laborum doloremque odio voluptas voluptate accusantium? Facilis iure animi ex veniam, neque et asperiores tenetur soluta! Nobis, consequuntur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quas doloribus libero? Nobis, consequuntur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi quas doloribus libero? </p>
 
-            <a href="#" class="bg-white text-black px-6 py-1 uppercase tracking-widest"> Sign Up </a>
+            <a href="#" class="bg-white border text-black px-6 py-1 uppercase tracking-widest hover:bg-black hover:text-white"> Sign Up </a>
         </div>
     </div>
+
+    <!-- This is the scrolling gallery images -->
 
     <div class="flex overflow-x-scroll gap-4 items-center"> 
         <img src="images/moody-website-assets/moody-9.jpg">
@@ -91,7 +95,7 @@ layout: default
 
 <!-- Section 5 - Contact Us -->
 
-<section class="grid grid-cols-2 gap-36 p-20">
+<section class="grid md:grid-cols-2 gap-36 p-20">
         <div class="text-white"> 
             <h1> Contact us. </h1>
 
@@ -106,7 +110,7 @@ layout: default
                 <textarea type="text" id="message" name="message" placeholder="We love a good compliment"  class="bg-inherit px-1 py-1 mb-4 w-full border" rows="6"></textarea>
     
                 <div class="text-right">
-                <input class="px-10 py-1 uppercase bg-white text-black ml-auto tracking-widest" type="submit" value="SEND">
+                <input class="px-10 py-1 uppercase bg-white border text-black ml-auto tracking-widest hover:bg-black hover:text-white" type="submit" value="SEND">
                 </div>
             </form>
         </div>
