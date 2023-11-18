@@ -42,17 +42,26 @@ img {
   max-width:100%;
 }
 
+
+
+@layer components {
+.button {
+  @apply bg-black text-white border;
+  text-transform: uppercase;
+  } 
+
+.button:hover {
+  transition: all 0.2s;
+  @apply bg-black text-white border dark:bg-white dark:text-black;
+  }
+}
+
+/* Typography Styles */
+
 a {
   text-decoration: none;
     color: inherit;
 }
-
-.vertical-text {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-}
-
-/* Typography Styles */
 
 h1 {
   font-weight: bold;
@@ -60,3 +69,7 @@ h1 {
   font-size: 3rem;
 }
 
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}

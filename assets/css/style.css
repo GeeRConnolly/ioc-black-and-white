@@ -404,6 +404,30 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.button {
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  text-transform: uppercase;
+}
+.button:hover {
+  transition: all 0.2s;
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+@media (prefers-color-scheme: dark) {
+  .button:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+}
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
@@ -471,8 +495,8 @@ video {
 .gap-4 {
   gap: 1rem;
 }
-.gap-24 {
-  gap: 6rem;
+.gap-16 {
+  gap: 4rem;
 }
 .gap-32 {
   gap: 8rem;
@@ -482,9 +506,6 @@ video {
 }
 .gap-36 {
   gap: 9rem;
-}
-.gap-16 {
-  gap: 4rem;
 }
 .overflow-x-scroll {
   overflow-x: scroll;
@@ -501,10 +522,6 @@ video {
 }
 .border-t-2 {
   border-top-width: 2px;
-}
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .bg-inherit {
   background-color: inherit;
@@ -525,18 +542,19 @@ video {
 .p-8 {
   padding: 2rem;
 }
-.p-10 {
-  padding: 2.5rem;
+.p-6 {
+  padding: 1.5rem;
 }
 .p-20 {
   padding: 5rem;
 }
-.p-6 {
-  padding: 1.5rem;
-}
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 .px-6 {
   padding-left: 1.5rem;
@@ -550,14 +568,6 @@ video {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
-}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -566,15 +576,8 @@ video {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
-.py-50p {
-  padding-top: 50%;
-  padding-bottom: 50%;
-}
 .pb-6 {
   padding-bottom: 1.5rem;
-}
-.pt-14 {
-  padding-top: 3.5rem;
 }
 .pb-4 {
   padding-bottom: 1rem;
@@ -614,14 +617,6 @@ video {
   font-size: 1.5rem;
   line-height: 1.2;
 }
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
 .font-bold {
   font-weight: 700;
 }
@@ -640,13 +635,13 @@ video {
 .tracking-widest {
   letter-spacing: 0.1em;
 }
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 /* Custom CSS */
@@ -684,22 +679,22 @@ img {
   max-width:100%;
 }
 
+/* Typography Styles */
+
 a {
   text-decoration: none;
     color: inherit;
 }
 
-.vertical-text {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-}
-
-/* Typography Styles */
-
 h1 {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 3rem;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
 
 .hover\:bg-black:hover {
@@ -712,32 +707,20 @@ h1 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
+  .dark\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .sm\:gap-12 {
-    gap: 3rem;
-  }
-  .sm\:gap-16 {
-    gap: 4rem;
-  }
-  .sm\:gap-20 {
-    gap: 5rem;
-  }
-  .sm\:gap-24 {
-    gap: 6rem;
-  }
-  .sm\:pb-6 {
-    padding-bottom: 1.5rem;
-  }
-  @media (min-width: 768px) {
-    .sm\:md\:pb-4 {
-      padding-bottom: 1rem;
-    }
-    .sm\:md\:gap-24 {
-      gap: 6rem;
-    }
   }
 }
 
@@ -757,24 +740,14 @@ h1 {
   .md\:justify-between {
     justify-content: space-between;
   }
-  .md\:gap-24 {
-    gap: 6rem;
-  }
-  .md\:gap-16 {
-    gap: 4rem;
-  }
   .md\:gap-12 {
     gap: 3rem;
   }
   .md\:p-10 {
     padding: 2.5rem;
   }
-  .md\:pb-4 {
-    padding-bottom: 1rem;
-  }
   .md\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
   }
 }
-
