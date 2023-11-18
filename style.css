@@ -48,11 +48,12 @@ img {
 .button {
   @apply bg-black text-white border;
   text-transform: uppercase;
+  transition: all 0.2s;
   } 
 
 .button:hover {
   transition: all 0.2s;
-  @apply bg-black text-white border dark:bg-white dark:text-black;
+  @apply bg-white border-black text-black dark:bg-white dark:text-black;
   }
 }
 
